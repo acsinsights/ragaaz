@@ -13014,6 +13014,9 @@ html.boxed .footer-reveal {
          height: 88px;
          margin-left: 70px;
      }
+     .con-text{
+        font-size: 2rem!important;
+     }
   }
 
  
