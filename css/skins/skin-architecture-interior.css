@@ -974,7 +974,7 @@ html .btn-primary {
   --color: #e2282a;
   --hover: #e2282a;
   --disabled: #e2282a;
-  --active: #fe8f34;
+  --active: #e2282a;
 }
 html .btn-primary:hover,
 html .btn-primary.hover {
@@ -993,7 +993,7 @@ html .btn-primary.focus {
 }
 html .btn-primary:focus:not(.bg-transparent),
 html .btn-primary.focus:not(.bg-transparent) {
-  background-color: #fe8f34;
+  background-color: #e2282a;
 }
 html .btn-primary.disabled,
 html .btn-primary:disabled {
@@ -1009,7 +1009,7 @@ html .btn-primary.active {
 }
 html .btn-primary:active:not(.bg-transparent),
 html .btn-primary.active:not(.bg-transparent) {
-  background-color: #fe8f34 !important;
+  background-color: #e2282a !important;
   background-image: none !important;
 }
 html .btn-primary-scale-2 {
@@ -1055,7 +1055,7 @@ html .btn-primary-scale-2.active:not(.bg-transparent) {
 }
 html .show > .btn-primary.dropdown-toggle,
 html .show > .btn-primary-scale-2.dropdown-toggle {
-  background-color: #fe8f34 !important;
+  background-color: #e2282a !important;
   background-image: none !important;
   border-color: #fe8827 #fe8827 #f16d01 !important;
 }
@@ -1916,7 +1916,7 @@ html .btn-with-arrow-solid.btn-light span {
 }
 .btn-gradient:not(.btn-outline):active,
 .btn-gradient:not(.btn-outline).active {
-  background: linear-gradient(135deg, #fe8f34 0%, #dd4238 80%) !important;
+  background: linear-gradient(135deg, #e2282a 0%, #dd4238 80%) !important;
   color: #777 !important;
 }
 .btn-gradient.btn-outline {
@@ -1941,9 +1941,9 @@ html .btn-with-arrow-solid.btn-light span {
 }
 .btn-gradient.btn-outline:active,
 .btn-gradient.btn-outline.active {
-  -o-border-image: linear-gradient(135deg, #fe8f34 0%, #dd4238 80%);
-  border-image: linear-gradient(135deg, #fe8f34 0%, #dd4238 80%);
-  color: #fe8f34;
+  -o-border-image: linear-gradient(135deg, #e2282a 0%, #dd4238 80%);
+  border-image: linear-gradient(135deg, #e2282a 0%, #dd4238 80%);
+  color: #e2282a;
 }
 .btn-gradient-primary:not(.btn-outline) {
   background: linear-gradient(135deg, #feaf6e 0%, #fe9e50 80%) !important;
@@ -2062,7 +2062,7 @@ body.dark .pagination > .active > a.focus {
 body.dark .pagination > .active > a:focus:not(.bg-transparent),
 .pagination > .active > a.focus:not(.bg-transparent),
 body.dark .pagination > .active > a.focus:not(.bg-transparent) {
-  background-color: #fe8f34;
+  background-color: #e2282a;
 }
 .pagination > .active > a.disabled,
 body.dark .pagination > .active > a.disabled,
@@ -2086,7 +2086,7 @@ body.dark .pagination > .active > a.active {
 body.dark .pagination > .active > a:active:not(.bg-transparent),
 .pagination > .active > a.active:not(.bg-transparent),
 body.dark .pagination > .active > a.active:not(.bg-transparent) {
-  background-color: #fe8f34 !important;
+  background-color: #e2282a !important;
   background-image: none !important;
 }
 .custom-control-input:checked ~ .custom-control-label::before,
@@ -2847,7 +2847,7 @@ html .inverted-light {
   button[class*="owl-"] {
   background-color: #e2282a;
   border-color: #e2282a #e2282a #fe8827;
-  color: #777;
+  color: #fff;
 }
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title)
   .owl-nav
@@ -2864,7 +2864,7 @@ html .inverted-light {
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title)
   .owl-nav
   button[class*="owl-"].active {
-  background-color: #fe8f34;
+  background-color: #e2282a;
   background-image: none;
   border-color: #fe8827 #fe8827 #f16d01;
 }
@@ -7834,7 +7834,7 @@ html .slide-overlay.slide-overlay-gradient .slotholder:after {
 .tparrows.tparrows-carousel.tp-rightarrow:focus:not(.bg-transparent),
 .tparrows.tparrows-carousel.tp-leftarrow.focus:not(.bg-transparent),
 .tparrows.tparrows-carousel.tp-rightarrow.focus:not(.bg-transparent) {
-  background-color: #fe8f34;
+  background-color: #e2282a;
 }
 .tparrows.tparrows-carousel.tp-leftarrow.disabled,
 .tparrows.tparrows-carousel.tp-rightarrow.disabled,
@@ -7858,7 +7858,7 @@ html .slide-overlay.slide-overlay-gradient .slotholder:after {
 .tparrows.tparrows-carousel.tp-rightarrow:active:not(.bg-transparent),
 .tparrows.tparrows-carousel.tp-leftarrow.active:not(.bg-transparent),
 .tparrows.tparrows-carousel.tp-rightarrow.active:not(.bg-transparent) {
-  background-color: #fe8f34 !important;
+  background-color: #e2282a !important;
   background-image: none !important;
 }
 .tparrows.arrows-primary:before {
