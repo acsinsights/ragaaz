@@ -13010,9 +13010,9 @@ html.boxed .footer-reveal {
   }
   @media only screen and (min-width:200px) and (max-width: 500px) {
     .ser-card1{
-        width: 88px!important;
+        width: 88px;
          height: 88px;
-         margin-left: 70px;
+         margin-left: 75px!important;
      }
      .con-text{
         font-size: 2rem!important;

@@ -2658,7 +2658,7 @@ html.sticky-header-active
 }
 .card-body {
   padding: 32px;
-  padding: 2rem;
+  padding: 2rem 1.4rem;
   position: relative;
   z-index: 1;
 }
