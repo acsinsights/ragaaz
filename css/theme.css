@@ -133,12 +133,14 @@ pre {
   #header .container {
     width: 100%;
   }
+  
 }
 #header .header-row {
   display: flex;
   flex-grow: 1;
   align-items: center;
   align-self: stretch;
+  margin: 0 85px;
   max-height: 100%;
 }
 #header .header-column {
@@ -13017,6 +13019,14 @@ html.boxed .footer-reveal {
      .con-text{
         font-size: 2rem!important;
      }
+     #header .header-row {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        align-self: stretch;
+        margin: 0 1px;
+        max-height: 100%;
+      }
   }
 
  
