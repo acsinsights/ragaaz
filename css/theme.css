@@ -11620,6 +11620,12 @@ a.text-light:hover {
     transform: rotate(180deg);
   }
 }
+.ser-card1{
+    width: 88px;
+    height: 88px;
+    margin-left: 80px;
+}
+
 #footer {
   background: #212529;
   border-top: 4px solid #212529;
