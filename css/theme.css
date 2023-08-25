@@ -11621,7 +11621,7 @@ a.text-light:hover {
   }
 }
 .ser-card1{
-    width: 88px;
+   width: 88px!important;
     height: 88px;
     margin-left: 80px;
 }
@@ -13008,6 +13008,15 @@ html.boxed .footer-reveal {
   html.boxed {
     background: 0 0 !important;
   }
+  @media only screen and (min-width:200px) and (max-width: 500px) {
+    .ser-card1{
+        width: 88px!important;
+         height: 88px;
+         margin-left: 70px;
+     }
+  }
+
+ 
 }
 html.gap-outside .body {
   margin-top: 25px;
