@@ -4,6 +4,10 @@ html {
   box-shadow: none !important;
   -webkit-font-smoothing: antialiased;
 }
+
+.bg-header{
+  background-color: #2a2a2a!important;
+}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: auto;
@@ -1446,7 +1450,7 @@ html:not(.sticky-header-active)
     #header.header-transparent
     .header-body.bg-color-dark
     .header-nav-main:before {
-    background-color: #212529;
+    background-color: #2a2a2a!important;
   }
   html #header.header-transparent .header-nav-main:before {
     width: calc(100% - 30px);

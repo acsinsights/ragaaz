@@ -45,6 +45,7 @@
 
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="css/demos/demo-architecture-interior.css">
+	<link rel="stylesheet" href="css/demos/demo-band.css">
 
 	<!-- Skin CSS -->
 	<link id="skinCSS" rel="stylesheet" href="css/skins/skin-architecture-interior.css">
@@ -123,10 +124,10 @@
 	</div>
 
 	<div class="body">	
-		
+		 
 		<header id="header" class="header-transparent header-effect-shrink" data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyHeaderContainerHeight': 80, 'stickyStartAt': 50, 'stickyChangeLogo': false}">
-			<div class="header-body border-top-0 bg-primary appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="2000" data-plugin-options="{'forceAnimation': true}">
-				<div  style="background-color: #2a2a2a;" class="header-container container-fluid">
+			<div class="header-body border-top-0 bg-header appear-animation" data-appear-animation="fadeInUpShorterPlus" data-appear-animation-delay="2000" data-plugin-options="{'forceAnimation': true}">
+				<div  class="header-container container-fluid">
 					<div class="header-row">
 						<div class="header-column align-items-start justify-content-center">
 							<div class="header-logo z-index-2 col-lg-2 px-0">
@@ -140,16 +141,16 @@
 								<div class="header-nav-main header-nav-main-arrows header-nav-main-mobile-dark header-nav-main-dropdown-no-borders header-nav-main-effect-3 header-nav-main-sub-effect-1">
 									<nav class="collapse">
 										<ul class="nav nav-pills" id="mainNav">
-											<li><a href="index.html" class="nav-link active">Home</a></li>
-											<li><a href="aboutus.html" class="nav-link ">About Us</a></li>
+											<li><a style="font-size: 0.9rem;" href="index.html" class="nav-link active">Home</a></li>
+											<li><a style="font-size: 0.9rem;"  href="aboutus.html" class="nav-link ">About Us</a></li>
 											<li class="dropdown">
-													<a href="services.html" class="nav-link ">Services</a>
+													<a style="font-size: 0.9rem;"  href="services.html" class="nav-link ">Services</a>
 												
 												</li>
-											
+												<li><a style="font-size: 0.9rem;" href="our-spaces.html" class="nav-link">Our Spaces</a></li>
 											<!-- <li><a href="demo-architecture-2-projects.html" class="nav-link">Portfolio</a></li>
 											<li><a href="demo-architecture-2-blog.html" class="nav-link">Blogs</a></li> -->
-											<li><a href="contact.html" class="nav-link">Contact</a></li>
+											<li><a style="font-size: 0.9rem;" href="contact.html" class="nav-link">Contact</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -209,77 +210,65 @@
 
 
 
+	
 		<div role="main" class="main">
+				
+			<section id="home" class="section border-0 bg-dark overlay overlay-show overlay-op-8 overflow-hidden m-0" style="height: 100vh;">                                  
+				<div class="background-image-wrapper position-absolute top-0 left-0 right-0 bottom-0 animated kenBurnsToLeft" style="background-image: url(img/ragaaz/backimg.jpg); background-size: cover; background-position: center; animation-duration: 20s;"></div>
+				<div class="container position-relative z-index-3 h-100">
+					<div class="row align-items-center justify-content-center h-100">
+						<div class="col-auto pt-5 mt-3">
+							<h1>
+								<span class="d-none">Porto HTML5 Template - Demo Band</span>
+								<!-- <svg class="custom-porto-svg-logo" viewbox="0 0 292 80" x="0px" y="0px" width="292px" height="85px">
+									<path d="M 48.3077 7.3505 C 43.4299 3.1552 36.1469 1.052 26.4362 1.052 L -0.1678 1.052 L -0.1678 77.6639 L 20.5403 77.6639 L 20.5403 51.888 L 26.3914 51.888 C 35.7218 51.888 42.9265 49.5722 48.0057 44.9405 C 53.0736 40.309 55.6132 33.753 55.6132 25.2505 C 55.6132 17.52 53.1743 11.5571 48.3077 7.3505 L 48.3077 7.3505 ZM 20.5403 17.52 L 25.9439 17.52 C 31.739 17.52 34.6366 20.0483 34.6366 25.0939 C 34.6366 28.0922 33.7081 30.4527 31.8509 32.1532 C 29.9938 33.8538 27.499 34.704 24.3553 34.704 L 20.5403 34.704 L 20.5403 17.52 L 20.5403 17.52 Z" stroke="#ffffff" stroke-width="1" fill="#ffffff"></path>
+									<path d="M 118.7302 5.7597 C 112.7719 1.6666 104.9938 -0.38 95.3959 -0.38 C 83.1791 -0.38 73.8712 2.9874 67.4719 9.6999 C 61.0615 16.4124 57.8618 26.1344 57.8618 38.8657 C 57.8618 51.7426 61.0726 61.5428 67.5166 68.2777 C 73.9607 75.0126 83.2128 78.38 95.2953 78.38 C 104.9252 78.38 112.7404 76.3068 118.7302 72.1598 L 118.7302 5.7597 ZM 95.3959 16.804 C 100.5421 16.804 104.4242 18.6276 107.0197 22.2523 C 109.6152 25.8771 110.913 31.4932 110.913 39.1007 C 110.913 46.6859 109.6264 52.2572 107.0757 55.8372 C 104.5137 59.4172 100.5869 61.196 95.2953 61.196 C 84.8796 61.196 79.6774 53.8346 79.6774 39.1007 C 79.6774 24.2437 84.9131 16.804 95.3959 16.804 Z" stroke="#ffffff" stroke-width="1" fill="#ffffff"></path>
+									<path d="M 149.3979 49.74 L 165.8884 77.6639 L 189.3821 77.6639 L 166.9735 44.247 C 175.6438 39.3915 179.9846 32.5336 179.9846 23.6731 C 179.9846 8.5924 169.5131 1.052 148.5925 1.052 L 123.3646 1.052 L 123.3646 77.6639 L 144.0728 77.6639 L 144.0728 49.74 L 149.3979 49.74 L 149.3979 49.74 ZM 144.0728 16.804 L 148.2344 16.804 C 155.4392 16.804 159.0527 19.3995 159.0527 24.5681 C 159.0527 30.8555 155.3721 33.988 148.0219 33.988 L 144.0728 33.988 L 144.0728 16.804 L 144.0728 16.804 Z" stroke="#ffffff" stroke-width="1" fill="#ffffff"></path>
+									<path d="M 212.3724 18.236 L 237.7653 16.625 L 227.6321 1.052 L 177.8002 1.052 L 186.7502 18.236 L 191.6643 18.236 L 191.6643 77.6639 L 212.3724 77.6639 L 212.3724 18.236 Z" stroke="#ffffff" stroke-width="1" fill="#ffffff"></path>
+									<path d="M 253.6318 16.804 C 258.7781 16.804 262.6603 18.6276 265.2556 22.2523 C 267.8513 25.8771 269.1489 31.4932 269.1489 39.1007 C 269.1489 46.6859 267.8624 52.2572 265.3115 55.8372 C 262.7496 59.4172 258.8229 61.196 253.5313 61.196 C 243.1157 61.196 237.9136 53.8346 237.9136 39.1007 C 237.9136 36.0745 238.1273 24.4059 238.5618 21.995 L 216.5537 23.785 C 216.2476 26.2813 216.0979 36.0817 216.0979 38.8657 C 216.0979 51.7426 219.3087 61.5428 225.7527 68.2777 C 232.1965 75.0126 241.4487 78.38 253.5313 78.38 C 265.7703 78.38 275.0784 75.0349 281.4327 68.3336 C 287.7874 61.6436 290.9646 51.8545 290.9646 38.9776 C 290.9646 26.0673 287.7985 16.2894 281.4888 9.6216 C 275.1677 2.9539 265.8821 -0.38 253.6318 -0.38 C 252.1803 -0.38 234.6597 -0.3318 233.2903 -0.2368 L 245.8203 17.2693 C 247.1204 16.9562 252.1108 16.804 253.6318 16.804 Z" stroke="#ffffff" stroke-width="1" fill="#ffffff"></path>
+								</svg> -->
 
-			<div class="slider-container rev_slider_wrapper" style="height: 100vh;" id="home">
-				<div id="revolutionSlider" class="slider rev_slider" data-version="5.4.8" data-plugin-revolution-slider
-					data-plugin-options="{'sliderLayout': 'fullscreen', 'delay': 9000, 'gridwidth': 1630, 'gridheight': 800, 'responsiveLevels': [4096,1200,992,500], 'parallax': { 'type': 'mouse', 'origo': 'enterpoint', 'speed': 1000, 'levels': [2,3,4,5,6,7,8,9,12,50], 'disable_onmobile': 'on' }}">
-					<ul>
-						<li class="slide-overlay" data-transition="fade">
-							<img src="img/ragaaz/backimg.jpg" alt="" data-bgposition="center center" data-bgfit="cover"
-								data-bgrepeat="no-repeat" class="rev-slidebg">
 
-							<div class="tp-caption rs-parallaxlevel-4"
-								data-frames='[{"from":"opacity:0;","speed":300,"to":"opacity:1;","delay":500,"ease":"Power2.easeInOut"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-								data-x="center" data-hoffset="['-150','-150','-150','-150']" data-y="center"
-								data-voffset="['-20','-20','-20','-20']" data-width="['430','430','630','830]"
-								data-height="['330','330','530','730']">
-								<svg class="custom-square-1 custom-transition-1 custom-mobile-square-thickness"
-									width="100%" height="100%">
-									<rect width="100%" height="100%" fill="none" stroke-width="40" stroke="#000" />
+								<svg class="custom-porto-svg-logo" id="Layer_1" width="350px" height="100px" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 888.44 159.82"><defs><style>.cls-1{fill:#fff;}</style></defs><title>raaagaz</title><path class="cls-1" d="M60.51-205.41V-356.8H133q28.77,0,42.4,10.27T189-314.66q0,12.74-5.81,21.84t-18,15.26q10,3.81,14.08,10.33t4.73,23q.3,4.62.62,12.44.7,18.28,6.27,21.17v5.24h-40.6q-3-8-3.39-22T146-245q-.92-8.84-6-13T125-262H99.05v56.63Zm38.54-86.54h28.88q11.73,0,17.22-4.32t5.5-13.77q0-8.32-5.35-12.38T129-326.48H99.05Z" transform="translate(-60.51 361.22)"/><path class="cls-1" d="M254.77-356.8h42.34l53.45,151.39H308.93l-9.25-27.75H249.11l-8.63,27.75H200.29Zm3.59,92.29h33.1L274.6-316.72Z" transform="translate(-60.51 361.22)"/><path class="cls-1" d="M479.34-205.41l-3.08-19.53A54.76,54.76,0,0,1,456-207.21q-11.77,5.81-27.5,5.81a68.4,68.4,0,0,1-27.18-5.34,64,64,0,0,1-22-15.73,71.65,71.65,0,0,1-15.11-25.18A94.24,94.24,0,0,1,359-279.31q0-37.1,21.23-59.51t56.48-22.4q26.61,0,43.94,13.36t21.94,37.41h-37.1q-3.71-9.76-11.31-14.75t-18.6-5q-16.65,0-26.93,13.56t-10.28,35.87q0,22,10.12,35t27.09,13q13.56,0,22.45-6.88t11.05-19.22H435.35v-29.09H503.6v82.53Z" transform="translate(-60.51 361.22)"/><path class="cls-1" d="M571.33-356.8h42.35l53.44,151.39H625.5l-9.25-27.75H565.68L557-205.41H516.86Zm3.6,92.29H608l-16.85-52.21Z" transform="translate(-60.51 361.22)"/><path class="cls-1" d="M721.6-356.8h42.34l53.45,151.39H775.76l-9.25-27.75H715.94l-8.63,27.75H667.12Zm3.59,92.29h33.1l-16.86-52.21Z" transform="translate(-60.51 361.22)"/><path class="cls-1" d="M823.66-205.41v-30.32L901-326.28H826.64V-356.8H949v30.52l-77.3,90.55H949v30.32Z" transform="translate(-60.51 361.22)"/>
 								</svg>
-							</div>
 
-							<h1 class="tp-caption font-weight-bold text-color-light ws-normal rs-parallaxlevel-3"
-								data-frames='[{"from":"opacity:0;y:[50%];","speed":2000,"to":"opacity:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-								data-x="center" data-hoffset="['0','0','30','30']" data-y="center"
-								data-voffset="['-55','-55','-85','-120']" data-width="['500','500','780','1000']"
-								data-fontsize="['66','66','86','120']" data-lineheight="['72','72','90','125']">RAGAAZ STUDIOS</h1>
 
-							<!--<div class="tp-caption font-weight-light text-color-light ls-0 rs-parallaxlevel-4"
-								data-frames='[{"from":"opacity:0;y:[50%]","speed":2000,"to":"opacity:0.7;","delay":1200,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-								data-x="center" data-hoffset="['-181','-181','-152','-181']" data-y="center"
-								data-voffset="['45','45','45','65']" data-fontsize="['16','16','32','45']"
-								data-lineheight="['20','20','40','50']">Hello, learn more about us.</div>-->
+								
+								
 
-							<!--<a class="tp-caption d-inline-flex align-items-center btn btn-dark font-weight-bold rounded ls-0 rs-parallaxlevel-2"
-								data-hash data-hash-offset="95" href="#whoweare"
-								data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"x:-50%;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-								data-x="['center','center','center','center']" data-hoffset="['-5','-5','25','45']"
-								data-y="center" data-voffset="['125','125','210','275']"
-								data-paddingtop="['20','20','30','40']" data-paddingbottom="['20','20','30','40']"
-								data-paddingleft="['68','68','68','95']" data-paddingright="['15','15','15','25']"
-								data-fontsize="['16','16','23','45']" data-lineheight="['20','20','26','50']">WHO WE ARE
-								<i class="fas fa-arrow-right ms-4 ps-3 me-2 text-4"></i></a>-->
 
-						</li>
-						<!--<li class="slide-overlay" data-transition="fade">
-							<img src="img/ragaaz/bw_EJS2036.jpg" alt="" data-bgposition="center center"
-								data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg">
-
-							<h2 class="tp-caption text-center font-weight-bold text-color-light ws-normal rs-parallaxlevel-3"
-								data-frames='[{"from":"opacity:0;y:[50%];","speed":2000,"to":"opacity:1;","delay":800,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"o:0;","ease":"Power2.easeInOut"}]'
-								data-x="center" data-hoffset="['0','0','30','30']" data-y="center"
-								data-voffset="['-55','-55','-85','-120']" data-width="['580','580','780','1000']"
-								data-fontsize="['66','66','86','120']" data-lineheight="['72','72','90','125']">The
-								Power of Design to make a Better World</h2>
-
-							<a class="tp-caption d-inline-flex align-items-center btn btn-dark font-weight-bold rounded ls-0 rs-parallaxlevel-2"
-								data-hash data-hash-offset="95" href="#contactus"
-								data-frames='[{"delay":1600,"speed":2000,"frame":"0","from":"x:-50%;opacity:0;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;fb:0;","ease":"Power3.easeInOut"}]'
-								data-x="['center','center','center','center']" data-hoffset="['-5','-5','25','45']"
-								data-y="center" data-voffset="['125','125','210','275']"
-								data-paddingtop="['20','20','30','40']" data-paddingbottom="['20','20','30','40']"
-								data-paddingleft="['68','68','68','95']" data-paddingright="['15','15','15','25']"
-								data-fontsize="['16','16','23','45']" data-lineheight="['20','20','26','50']">CONTACT US
-								<i class="fas fa-arrow-right ms-4 ps-3 me-2 text-4"></i></a>
-
-						</li>-->
-					</ul>
+							</h1>
+						</div>
+					</div>
 				</div>
+			</section>
+
+		
+
+	
+
+		
+
+
+		
+
+		</div> 
+	
+				
+	
+			
+	
+				
+	
+	
+				
+	
+				<!-- </div> 
+	
+	
 			</div>
 		</div>
-		</section>
+		</section> -->
 
 
 		<!--<section class="section section-height-4 bg-quaternary border-0 m-0 appear-animation"
@@ -422,18 +411,20 @@
 				</div>
 			</div>
 		</section>-->
-		<section style="background-color: #fff;padding: 48px 0;" class="section section-height-4 border-0 m-0 appear-animation"
+		<section style="background-color: #ffffff;padding: 48px 0;" class="section section-height-4 border-0 m-0 appear-animation"
 			data-appear-animation="fadeIn" id="ourservices">
 			<div class="container container-xl-custom">
 				<div class="row">
 					<div class="col text-center">
 						<div class="overflow-hidden">
-							<span
-								class="d-block text-color-primary custom-font-secondary font-weight-semibold appear-animation"
-								data-appear-animation="maskUp">WHAT WE DO</span>
+							<div style="top: -2px;
+							/* left: -46px; */
+							left: 206px;"  class="position-absolute z-index-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="2000" style="top: 100px; left: -80px;">
+								<h2 class="text-color-dark custom-stroke-text-effect-1 custom-big-font-size-1 font-weight-black opacity-1 mb-0">WHAT WE DO</h2>
+							</div>
 						</div>
 						<div class="overflow-hidden mb-4">
-							<h2 class="text-color-dark font-weight-bold mb-0 appear-animation"
+							<h2 style="font-weight: 900!important;" class="text-color-dark font-weight-bold mb-0 text-10 appear-animation"
 								data-appear-animation="maskUp" data-appear-animation-delay="250">Our Services</h2>
 						</div>
 					</div>
@@ -445,10 +436,10 @@
 					<!-- repeat this div for each slide -->
 
 				<div class="slide p-2">
-					<a href="javascript:void(0);"
+					<a href="/services.html#recording"
 					class="text-decoration-none">
 						<div class="featured-box featured-box-primary featured-box-effect-5 ">
-							<div style="padding-bottom: 2.3rem;background-color: #2a2a2a;" class="box-content">
+							<div style="background-color: #2a2a2a; opacity: 0.9;" class="box-content">
 								<!-- <svg class="mb-3" enable-background="new 0 0 24 24" height="88px" version="1.1"
 									viewBox="0 0 24 24" width="88px" xml:space="preserve"
 									xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -459,9 +450,9 @@
 									</g>
 								</svg> -->
 
-
-								<img style="margin-left: 90px;" class="ser-card1"  src="./img/Icons PNG/recording.png" alt="">
-
+							<div class="justify-content-center row">
+								<img style="height: 88px; width: 110px;" class=""  src="./img/Icons PNG/recording.png" alt="">
+							</div>
 								<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">Recording
 								</h3>
 								<p class="font-weight-light text-color-light opacity-5 mb-0">Our professional recording
@@ -472,11 +463,16 @@
 					</a>
 				</div>
 				<div class="slide p-2">
-					<a href="javascript:void(0);"
+					<a href="/services.html#music"
 					class="text-decoration-none">
 						<div class="featured-box featured-box-primary featured-box-effect-5 ">
-							<div style="background-color: #2a2a2a;" class="box-content">
-								<img class="ser-card1" src="./img/Icons PNG/music-production.png" alt="">
+							<div style="background-color: #2a2a2a;opacity: 0.9;" class="box-content">
+
+								<div class="justify-content-center row">
+									<img style="height: 88px; width: 110px;" class=""  src="./img/Icons PNG/music-production.png" alt="">
+								</div>
+
+							
 								<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">Music Production
 								</h3>
 								<p class="font-weight-light text-color-light opacity-5 mb-0">You name it and we create it, <br>all genre of music including indie, classical, jazz, pop and many more
@@ -486,11 +482,17 @@
 					</a>
 				</div>
 				<div class="slide p-2">
-					<a href="javascript:void(0);"
+					<a href="/services.html#mix-master"
 					class="text-decoration-none">
 						<div class="featured-box featured-box-primary featured-box-effect-5 ">
-							<div style="background-color: #2a2a2a;" class="box-content">
-								<img  class="ser-card1"  src="./img/Icons PNG/mix-master.png" alt="">
+							<div style="background-color: #2a2a2a;opacity: 0.9;" class="box-content">
+
+
+								<div class="justify-content-center row">
+									<img style="height: 88px; width: 110px;" class=""  src="./img/Icons PNG/mix-master.png" alt="">
+								</div>
+
+							
 								<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">Mix & Master
 
 								</h3>
@@ -502,11 +504,16 @@
 					</a>
 				</div>
 				<div class="slide p-2">
-					<a href="javascript:void(0);"
+					<a href="/services.html#video"
 					class="text-decoration-none">
 						<div class="featured-box featured-box-primary featured-box-effect-5 ">
-							<div style="background-color: #2a2a2a;" class="box-content">
-								<img  class="ser-card1"  src="./img/Icons PNG/video-production.png" alt="">
+							<div style="background-color: #2a2a2a;opacity: 0.9;" class="box-content">
+
+								<div class="justify-content-center row">
+									<img style="height: 88px; width: 110px;" class=""  src="./img/Icons PNG/video-production.png" alt="">
+								</div>
+								
+							
 								<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">Video Production
 
 
@@ -520,11 +527,17 @@
 					</a>
 				</div>
 				<div class="slide p-2">
-					<a href="javascript:void(0);"
+					<a href="/services.html#music-marketing"
 					class="text-decoration-none">
 						<div class="featured-box featured-box-primary featured-box-effect-5 ">
-							<div  style="padding-bottom: 2.3rem;background-color: #2a2a2a;" class="box-content">
-								<img  class="ser-card1"  src="./img/Icons PNG/music-production.png" alt="">
+							<div  style="padding-bottom: 2.3rem;background-color: #2a2a2a;opacity: 0.9;" class="box-content">
+
+
+								<div class="justify-content-center row">
+									<img style="height: 88px; width: 110px;" class=""  src="./img/Icons PNG/music-production.png" alt="">
+								</div>
+
+						
 								<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">Music Distribution & Marketing 
 								</h3>
 								<p class="font-weight-dark text-color-light opacity-5 mb-0">We make sure that your passion is reaching out to millions who deserve good music
@@ -534,11 +547,15 @@
 					</a>
 				</div>
 				<div class="slide p-2">
-					<a href="javascript:void(0);"
+					<a href="/services.html#education"
 					class="text-decoration-none">
 						<div class="featured-box featured-box-primary featured-box-effect-5 ">
-							<div style="background-color: #2a2a2a;" class="box-content">
-								<img style="width: 88px;height: 88px; margin-left: 80px; text-align: center;" src="./img/Icons PNG/education.png" alt="">
+							<div style="background-color: #2a2a2a;opacity: 0.9;" class="box-content">
+
+								<div class="justify-content-center row">
+									<img style="height: 88px; width: 110px;" class=""  src="./img/Icons PNG/education.png" alt="">
+								</div>
+
 								<h3 class="font-weight-bold text-color-light text-5 text-capitalize ls-0 my-3">Education
 
 
@@ -645,14 +662,16 @@
 		<section class="section bg-dark border-0 m-0" id="ourprojects">
 			<div class="container container-xl-custom">
 				<div class="row justify-content-center">
-					<div class="col-lg-9 col-xl-6 text-center">
+					<div class="col-lg-12 col-xl-12 text-center">
 						<div class="overflow-hidden">
-							<span
-								class="d-block text-color-primary custom-font-secondary font-weight-semibold appear-animation"
-								data-appear-animation="maskUp">What we look like</span>
+						
+
+								<div style="top: -16px;left: -4px;"  class="position-absolute z-index-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="2000" style="top: 100px; left: -80px;">
+								<h2 class="text-color-dark custom-stroke-text-effect-1 custom-big-font-size-1 font-weight-black opacity-1 mb-0">What we look like</h2>
+							</div>
 						</div>
 						<div class="overflow-hidden mb-3">
-							<h2 class="text-color-light font-weight-bold mb-0 appear-animation"
+							<h2 style="font-weight: 900!important;"  class="text-color-light  font-weight-bold mb-0 appear-animation"
 								data-appear-animation="maskUp" data-appear-animation-delay="250">Our Space</h2>
 						</div>
 						<p class="text-4 mb-5 text-color-light appear-animation" data-appear-animation="fadeInUpShorter"
@@ -668,8 +687,8 @@
 				<div class="row appear-animation" data-appear-animation="fadeInUpShorter"
 				data-appear-animation-delay="300">
 				<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-					<a href="ajax/demo-architecture-interior-ajax-team-detail.html"
-						class="text-decoration-none simple-ajax-popup">
+					<a href="javascript:void(0);"
+						class="text-decoration-none">
 						<div class="card border-0 custom-box-shadow-1">
 						
 							<img class="card-img-top z-index-1" src="img/demos/architecture-interior/projects/our-space.jpg" alt="" />
@@ -683,8 +702,8 @@
 					</a>
 				</div>
 				<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
-					<a href="ajax/demo-architecture-interior-ajax-team-detail.html"
-						class="text-decoration-none simple-ajax-popup">
+					<a href=" javascript:void(0);"
+						class="text-decoration-none">
 						<div class="card border-0 custom-box-shadow-1">
 						
 							<img class="card-img-top z-index-1" src="img/demos/architecture-interior/projects/our-space1.jpg" alt="" />
@@ -697,9 +716,10 @@
 						</div>
 					</a>
 				</div>
+				
 				<div class="col-md-6 col-lg-4 mb-4 mb-md-0">
-					<a href="ajax/demo-architecture-interior-ajax-team-detail.html"
-						class="text-decoration-none simple-ajax-popup">
+					<a href=" javascript:void(0);"
+						class="text-decoration-none">
 						<div class="card border-0 custom-box-shadow-1">
 						
 							<img class="card-img-top z-index-1" src="img/demos/architecture-interior/projects/our-space-3.jpg" alt="" />
@@ -829,14 +849,14 @@
 		<section class="section border-0 m-0" id="ourteam">
 			<div class="container container-xl-custom">
 				<div class="row justify-content-center">
-					<div class="col-lg-9 col-xl-6 text-center">
+					<div class="col-lg-12 col-xl-12 text-center">
 						<div class="overflow-hidden">
-							<span
-								class="d-block text-color-primary custom-font-secondary font-weight-semibold appear-animation"
-								data-appear-animation="maskUp">What they say</span>
+								<div style="top: -16px;left: -4px;"  class="position-absolute z-index-0 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="2000" style="top: 100px; left: -80px;">
+									<h2 class="text-color-dark custom-stroke-text-effect-1 custom-big-font-size-1 font-weight-black opacity-1 mb-0">What they say</h2>
+								</div>
 						</div>
 						<div class="overflow-hidden mb-3">
-							<h2 class="text-color-dark font-weight-bold pb-2 mb-0 appear-animation"
+							<h2 style="font-weight: 900!important;"  class="text-color-dark font-weight-bold pb-2 mb-0 appear-animation"
 								data-appear-animation="maskUp" data-appear-animation-delay="250">Artists Trust Us</h2>
 						</div>
 						<p class="font-weight-light text-color-dark line-height-9 text-4 pb-2 mb-4 appear-animation"
@@ -869,9 +889,9 @@
 									<rect width="80" height="80" fill="none" stroke-width="13" stroke="#000" />
 								</svg>
 								<img class="card-img-top z-index-1" src="img/team/Akira.jpg" alt="" />
-								<div class="card-body">
-									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Michel Doe</h4>
-									<p class="card-text">Hindustani Classical Singer</p>
+								<div class="card-body">                                              
+									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">AKIRA</h4> 
+									<p class="card-text">Singer/Songwriter</p>
 								</div>
 							</div>
 						</a>
@@ -885,8 +905,8 @@
 								</svg>
 								<img class="card-img-top z-index-1" src="img/team/Ghulam Hasan Khan.jpg" alt="" />
 								<div class="card-body">
-									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Jessica Doe</h4>
-									<p class="card-text">Tabla Player</p>
+									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">GULAM HASAN KHAN</h4>
+									<p class="card-text"> Indian Classical Singer</p>
 								</div>
 							</div>
 						</a>
@@ -900,8 +920,8 @@
 								</svg>
 								<img class="card-img-top z-index-1" src="img/team/One-Creative-Man.png" alt="" />
 								<div class="card-body">
-									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">John Doe</h4>
-									<p class="card-text">Singer</p>
+									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">ONE CREATIVE MAN</h4> 
+									<p class="card-text">Singer/Songwriter</p>
 								</div>
 							</div>
 						</a>
@@ -915,8 +935,8 @@
 								</svg>
 								<img class="card-img-top z-index-1" src="img/team/Samad-Khan.png" alt="" />
 								<div class="card-body">
-									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">Alice Doe</h4>
-									<p class="card-text">Rapper</p>
+									<h4 class="card-title font-weight-bold line-height-3 text-4 mb-0">ONE CREATIVE MAN</h4>
+									<p class="card-text">Singer Songwriter</p>
 								</div>
 							</div>
 						</a>
@@ -1638,22 +1658,31 @@
 												<div>
 													<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-remove-right-quote custom-testimonial-quote mb-0">
 														<blockquote>
-															<p class="custom-font-secondary text-color-light opacity-8 font-weight-light line-height-6 text-4-5 px-2 px-lg-3 mb-0"><em>I am a piano student at Ragaaz music academy. I've been learning here for 4 years. It's been a great experience so far and the teachers are understanding and helpful. Highly recommend!</em></p>
+															<p class="custom-font-secondary text-color-light opacity-8 font-weight-light line-height-6 text-4-5 px-2 px-lg-3 mb-0"><em>Had an incredible experience recording at Ragaaz Studios with Tejas and Dhruv. It is an ideal place to record your compositions using Top-Notch equipment. Your most creative work will occur here, and Tejas is a terrific guy to work with. 100% recommended for everyone.</em></p>
 														</blockquote>
 														<div class="testimonial-author">
-															<p class="text-color-light font-weight-bold text-4 mb-0">Reva Agarval</p>
+															<p class="text-color-light font-weight-bold text-4 mb-0">Samad Khan</p>
 														</div>
+													</div>
+												</div>
+												<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-remove-right-quote custom-testimonial-quote mb-0">
+													<blockquote>
+														<p class="custom-font-secondary text-color-light opacity-8 font-weight-light line-height-6 text-4-5 px-2 px-lg-3 mb-0"><em>Great vibe and place to record music, VO, etc. Calming and productive through and through. Tejas runs an immaculate setup! 10/10 recommend!</em></p>
+													</blockquote>
+													<div class="testimonial-author">
+														<p class="text-color-light font-weight-bold text-4 mb-0">Bharath Rajeevan</p>
 													</div>
 												</div>
 												<div>
 													<div class="testimonial testimonial-style-2 testimonial-with-quotes testimonial-remove-right-quote custom-testimonial-quote mb-0">
 														<blockquote>
-															<p class="custom-font-secondary text-color-light opacity-8 font-weight-light line-height-6 text-4-5 px-2 px-lg-3 mb-0"><em>Very happy with the way my learning is going on at Ragaaz music academy, pursuing a course with drums. Highly recommended to anyone who wants to pursue music.</em></p>
+															<p class="custom-font-secondary text-color-light opacity-8 font-weight-light line-height-6 text-4-5 px-2 px-lg-3 mb-0"><em>I had a wonderful time recording at this amazing studio. Most warm team and state-of-art studio with lovely ambiance. This is my fav destination for recording now !!! Great work guys!!</em></p>
 														</blockquote>
 														<div class="testimonial-author">
-															<p class="text-color-light font-weight-bold text-4 mb-0">Rajiv Chhabra</p>
+															<p class="text-color-light font-weight-bold text-4 mb-0">Ghulam Hasan Khan</p>
 														</div>
 													</div>
+											
 												</div>
 											</div>
 										</div>
@@ -1688,10 +1717,10 @@
 							<a href="#" class="text-decoration-none">
 								<img style="width: 88px; height: 88px;" src="img/demos/architecture-2/logo-white.png" class="img-fluid pb-2 mt-3 mb-4" width="153" height="53" alt="Demo Architecture & Interior Design" />
 							</a>
-							<h3 class="text-color-primary font-weight-bold text-transform-none text-8 line-height-1 pe-5 mb-4">Ragaaz Studio</h3>
+							<h3 class="text-color-primary font-weight-bold text-transform-none text-8 line-height-1 pe-5 mb-4">RAGAAZ STUDIO</h3>
 							<ul class="list list-icons list-icons-sm">
 								<li class="text-color-light font-weight-light">
-									<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong class="font-weight-normal">Address:</strong> Malibu Town, Gurgaon
+									<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong class="font-weight-normal">Address:</strong>352P Basement, Sector 47, Gurugram, Haryana 122018
 								</li>
 								<li class="text-color-light font-weight-light">
 									<i class="fas fa-angle-right custom-text-color-grey-1"></i> <strong class="font-weight-normal">Email:</strong><a href="mailto:contact@ragaaz.com " class="link-hover-style-1 ms-1"> <span class="__cf_email__" data-cfemail="0568646c6945607d64687569602b666a68">contact@ragaaz.com </span></a>
@@ -1748,27 +1777,40 @@
 		</div>
 	</section>
 
-</div> <ul
-class="header-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-medium custom-social-icons-divider">
-<li class="social-icons-facebook">
-	<a href="https://www.facebook.com/ragaazmusicacademy/" target="_blank" title="Facebook"><i
-			class="fab fa-facebook-f"></i></a>
-</li>
-<li class="social-icons-twitter">
-	<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fragaazacademy" target="_blank" title="Twitter"><i
-			class="fab fa-twitter"></i></a>
-</li>
-<li class="social-icons-linkedin">
-	<a href="https://www.youtube.com/ragaazstudios" target="_blank" title="Linkedin"><i
-			class="fab fa-youtube"></i></a>
-</li>
-<li class="social-icons-linkedin">
-	<a href="https://www.instagram.com/ragaazmusicacademy/" target="_blank" title="Linkedin"><i
-			class="fab fa-instagram"></i></a>
-</li>
-</ul>
+</div> 
 
-<footer style="background-color: #2a2a2a;" id="footer" class="border-0">
+
+<footer id="footer" class="bg-header border-width-1 custom-border-color-grey py-5 mt-0">
+	<div class="container container-xl-custom">
+		<div class="row justify-content-between">
+			<div class="col-auto">
+				<ul class="header-social-icons social-icons social-icons-clean social-icons-icon-light social-icons-medium custom-social-icons-divider">
+					<li class="social-icons-facebook">
+					<a href="https://www.facebook.com/ragaazmusicacademy/" target="_blank" title="Facebook"><i
+							class="fab fa-facebook-f"></i></a>
+				</li>
+				<li class="social-icons-twitter">
+					<a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fragaazacademy" target="_blank" title="Twitter"><i
+							class="fab fa-twitter"></i></a>
+				</li>
+			<li class="social-icons-linkedin">
+					<a href="https://www.youtube.com/ragaazstudios" target="_blank" title="Linkedin"><i
+							class="fab fa-youtube"></i></a>
+				</li>
+				<li class="social-icons-linkedin">
+					<a href="https://www.instagram.com/ragaazmusicacademy/" target="_blank" title="Linkedin"><i
+							class="fab fa-instagram"></i></a>
+				</li>
+			</ul>
+			</div>
+			<div class="col-auto text-end">
+				<p class="text-color-light font-weight-light opacity-8 mb-0">Copyrights © 2023 All Rights Reserved by Ragaaz Studio</p>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- <footer style="background-color: #2a2a2a;" id="footer" class="border-0">
 	<div class="container container-xl-custom pt-5 pb-3">
 		<div style="justify-content: center;" class="row py-5">
 			<div class="col-md-4 col-lg-2 mb-4 mb-lg-0">
@@ -1830,17 +1872,7 @@ class="header-social-icons social-icons social-icons-clean social-icons-icon-lig
 					</li>
 				</ul>
 			</div>
-			<!-- <div class="col-md-4 col-lg-2 mb-4 mb-md-0">
-				<h4 class="font-weight-extra-bold text-5 ls-0">About</h4>
-				<ul class="list-unstyled">
-					<li class="mb-1">
-						<a href="demo-architecture-2-about-us.html">About Us</a>
-					</li>
-					<li>
-						<a href="demo-architecture-2-contact.html">Send a Message</a>
-					</li>
-				</ul>
-			</div> -->
+		
 			<div class="col-md-4 col-lg-2">
 				<h4 class="font-weight-extra-bold text-5 ls-0">Follow Us</h4>
 					<ul class="social-icons social-icons-clean social-icons-icon-light">
@@ -1876,7 +1908,7 @@ class="header-social-icons social-icons social-icons-clean social-icons-icon-lig
 		  </div>
 		</div>
 	  </div>
-</footer>
+</footer> -->
 	</footer>
 	</div>
 
@@ -1913,7 +1945,7 @@ class="header-social-icons social-icons social-icons-clean social-icons-icon-lig
 
 	<!-- Demo -->
 	
-
+	<script src="js/demos/demo-band.js"></script>
 
 	<!-- Vendor -->
 
