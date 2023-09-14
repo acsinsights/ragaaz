@@ -1,3 +1,40 @@
+$('.client-logo').owlCarousel({
+	loop: true,
+	margin: 0,
+	dots: false,
+	nav: false,
+	autoplay: true,
+	navText: ["<i class='icofont icofont-thin-left'></i>", "<i class='icofont icofont-thin-right'></i>"],
+	responsive: {
+		0: {
+			items: 3
+		},
+		300: {
+			items: 3
+		},
+		600: {
+			items: 4
+		},
+		1000: {
+			items: 6
+		}
+	}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.theme = {};
 window.theme.fn = {
   getOptions: function (opts) {

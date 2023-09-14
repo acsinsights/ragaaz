@@ -1,0 +1,46 @@
+.headeing-text h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 68px;
+    color: #1c1c1c;
+    display: block;
+    margin: 0;
+    text-transform: uppercase;
+}
+.headeing-subheading-text {
+    color: #999;
+    line-height: 40px;
+    text-align: center;
+    font-weight: 200;
+  font-size:20px;
+
+}
+.client-section .client-logo{
+  margin-bottom: 50px;
+}
+.client-section .client-logo .item {
+    transition: transform 200ms cubic-bezier(.785, .135, .15, .86), box-shadow 200ms cubic-bezier(.785, .135, .15, .86);
+    margin-bottom: 15px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 30px;
+    border: 1px solid #efeeee;
+    /* background-color:#ddd; */
+}
+.client-section .client-logo .item:hover {
+    -ms-transform: translateY(-5px);
+    transform: translateY(-5px);
+}
+.client-section .client-logo img {
+    width: 100px;
+    margin: 0 auto;
+    opacity: 0.8;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+.client-section .client-logo img:hover {
+    opacity: 1;
+    transition: all 0.3s ease-in-out 0s;
+    -webkit-filter: grayscale(0);
+    filter: grayscale(0);
+}
