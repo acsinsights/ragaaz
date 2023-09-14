@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 $('.client-logo').owlCarousel({
 	loop: true,
 	margin: 0,
@@ -20,9 +30,6 @@ $('.client-logo').owlCarousel({
 		}
 	}
 })
-
-
-
 
 
 
