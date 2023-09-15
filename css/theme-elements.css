@@ -777,7 +777,7 @@
 }
 @keyframes kenBurnsToRight {
   from {
-    transform: scale(1.2);
+    transform: scale(1.5);
   }
   to {
     transform: scale(1);
@@ -786,7 +786,7 @@
 .kenBurnsToRight {
   animation-name: kenBurnsToRight;
   animation-timing-function: linear;
-  transform-origin: right;
+  transform-origin: center;
 }
 .kenBurnsToRightTop {
   animation-name: kenBurnsToRight;
