@@ -1,4 +1,36 @@
 
+$('#service-slider').owlCarousel({
+  loop: true,
+  dots: true,
+  nav:true,
+  navigation: true,
+  responsiveClass: true,
+  autoplay: true,
+  items: 4,
+  responsive: {
+    1200: {
+      items: 4,
+    },
+    992: {
+      items: 3,
+    },
+    768: {
+      items: 2,
+    },
+    0: {
+      items: 1,
+    }
+  },
+  rewindNav : true,
+  navText: 
+  [
+   "<i class='fas fa-chevron-left'></i>",
+   "<i class='fas fa-chevron-right'></i>"
+  ]
+
+});
+
+
 
 
 
