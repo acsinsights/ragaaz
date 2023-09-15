@@ -36,7 +36,7 @@
   }
   .logo .text text.is-active {
     animation-name: text;
-    animation-duration: 4s;
+    animation-duration: 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   }
@@ -122,3 +122,8 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
+
+
+/* .ser-img{
+  width: 550px;
+} */
