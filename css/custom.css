@@ -122,8 +122,29 @@
     -webkit-filter: grayscale(0);
     filter: grayscale(0);
 }
+.secimg{
+  height: 550px;
+   width: auto;
+}
+@media (min-width: 900px) {
+.sec-hei{
+  height: 100vh;
+}
 
+}
 
+@media (min-width: 200px) and (max-width: 890px) {
+
+  .secimg{
+    height: 270px;
+     width: auto;
+     margin-top: 20px;
+  }
+  .nm-foot{
+    text-align: center;
+    justify-content: center!important;
+  }
+}
 /* .ser-img{
   width: 550px;
 } */
