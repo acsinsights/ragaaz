@@ -144,6 +144,15 @@
     text-align: center;
     justify-content: center!important;
   }
+  .custom-big-font-size-1 {
+    font-size: 3.2rem;
+}
+}
+@media (min-width: 200px) and (max-width: 690px) {
+
+  .custom-big-font-size-1 {
+    visibility: hidden;
+}
 }
 /* .ser-img{
   width: 550px;
