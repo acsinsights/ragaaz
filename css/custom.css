@@ -153,6 +153,10 @@
   .custom-big-font-size-1 {
     visibility: hidden;
 }
+
+.mobile-sec-spacing{
+  margin-top: 308px!important;
+}
 }
 /* .ser-img{
   width: 550px;
